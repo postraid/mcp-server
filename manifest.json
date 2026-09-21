@@ -1,0 +1,38 @@
+{
+  "manifest_version": "0.3",
+  "name": "postraid",
+  "display_name": "Postraid",
+  "version": "1.0.0",
+  "description": "Connect your Postraid account to an MCP client.",
+  "long_description": "get_profile reads your own Postraid account ID, email and display name. It cannot read social credentials, generate content, publish posts, access another account or spend credits.",
+  "author": {
+    "name": "Codex"
+  },
+  "homepage": "https://www.postraid.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/postraid/mcp-server"
+  },
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server/index.js"
+      ]
+    }
+  },
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ],
+    "runtimes": {
+      "node": ">=22"
+    }
+  },
+  "license": "MIT"
+}

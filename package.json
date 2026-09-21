@@ -1,0 +1,59 @@
+{
+  "name": "postraid-mcp",
+  "version": "1.0.0",
+  "description": "Postraid MCP connector for Claude Desktop and other stdio clients",
+  "type": "module",
+  "bin": {
+    "postraid-mcp": "server/index.js"
+  },
+  "files": [
+    "server",
+    "icon.png",
+    "manifest.json",
+    "server.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node --test test/*.test.mjs",
+    "bundle": "mcpb pack . postraid.mcpb"
+  },
+  "dependencies": {
+    "mcp-remote": "0.14.2"
+  },
+  "devDependencies": {
+    "@anthropic-ai/mcpb": "2.1.2"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "author": "Codex",
+  "contributors": [
+    {
+      "name": "Codex"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://www.postraid.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/postraid/mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/postraid/mcp-server/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "mcp",
+    "claude",
+    "desktop",
+    "postraid"
+  ],
+  "mcpName": "io.github.postraid/mcp-server",
+  "overrides": {
+    "tmp": "^0.2.6"
+  }
+}
