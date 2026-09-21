@@ -1,0 +1,6 @@
+{
+  "brand": "Postraid",
+  "endpoint": "https://mcp.postraid.com/mcp",
+  "version": "1.1.0",
+  "scope": "profile:read content:read drafts:write"
+}

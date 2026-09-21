@@ -1,0 +1,38 @@
+{
+  "manifest_version": "0.3",
+  "name": "postraid",
+  "display_name": "Postraid",
+  "version": "1.1.0",
+  "description": "Connect your Postraid account to an MCP client.",
+  "long_description": "get_profile reads your account. list_brands, list_posts and get_post browse your own workspace content. create_post_draft saves an editable carousel with placeholder backgrounds. No generation, publishing, scheduling or credit spending.",
+  "author": {
+    "name": "Codex"
+  },
+  "homepage": "https://www.postraid.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/postraid/mcp-server"
+  },
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server/index.js"
+      ]
+    }
+  },
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ],
+    "runtimes": {
+      "node": ">=22"
+    }
+  },
+  "license": "MIT"
+}
