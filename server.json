@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.postraid/mcp-server",
+  "description": "MCP connector for Postraid brands, saved social content and editable carousel drafts for review.",
+  "repository": {
+    "url": "https://github.com/postraid/mcp-server",
+    "source": "github"
+  },
+  "version": "1.1.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "postraid-mcp",
+      "version": "1.1.1",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.postraid.com/mcp"
+    }
+  ]
+}
