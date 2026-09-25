@@ -1,0 +1,38 @@
+{
+  "manifest_version": "0.3",
+  "name": "postraid",
+  "display_name": "Postraid",
+  "version": "1.1.1",
+  "description": "MCP connector for Postraid brands, saved social content and editable carousel drafts for review.",
+  "long_description": "Postraid helps founders, creators and growth marketers turn product context into social content. Start with a website or product brief, explore reactions, memes and carousels, then keep the ideas that fit the brand. The application combines a content library, creative review and publishing calendar so approved work has a place to go next. get_profile reads your account. list_brands, list_posts and get_post browse your own workspace content. create_post_draft saves an editable carousel with placeholder backgrounds. No generation, publishing, scheduling or credit spending. The MCP reads the user\u2019s own workspace, not team workspaces. Its posts are saved content pieces, not a delivery ledger proving that a social post went live. Draft creation does not generate backgrounds, render media, schedule, publish or spend credits. Replace placeholder backgrounds and review the result in the product. Reach, sales and viral performance are not guaranteed.",
+  "author": {
+    "name": "Codex"
+  },
+  "homepage": "https://www.postraid.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/postraid/mcp-server"
+  },
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server/index.js"
+      ]
+    }
+  },
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ],
+    "runtimes": {
+      "node": ">=22"
+    }
+  },
+  "license": "MIT"
+}
