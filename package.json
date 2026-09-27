@@ -1,0 +1,63 @@
+{
+  "name": "postraid-mcp",
+  "version": "1.1.1",
+  "description": "MCP connector for Postraid brands, saved social content and editable carousel drafts for review.",
+  "type": "module",
+  "bin": {
+    "postraid-mcp": "server/index.js"
+  },
+  "files": [
+    "server",
+    "icon.png",
+    "manifest.json",
+    "server.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node --test test/*.test.mjs",
+    "bundle": "mcpb pack . postraid.mcpb"
+  },
+  "dependencies": {
+    "mcp-remote": "0.14.2"
+  },
+  "devDependencies": {
+    "@anthropic-ai/mcpb": "2.1.2"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "author": "Codex",
+  "contributors": [
+    {
+      "name": "Codex"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://www.postraid.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/postraid/mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/postraid/mcp-server/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "postraid",
+    "social-content",
+    "carousel",
+    "content-workflow",
+    "social-media"
+  ],
+  "mcpName": "io.github.postraid/mcp-server",
+  "overrides": {
+    "tmp": "^0.2.6"
+  }
+}
